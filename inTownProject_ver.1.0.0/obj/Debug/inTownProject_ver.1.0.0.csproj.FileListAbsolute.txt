@@ -1,0 +1,10 @@
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.exe
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.pdb
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.exe
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.pdb
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.LoginForm.resources
+c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.MainForm.resources
