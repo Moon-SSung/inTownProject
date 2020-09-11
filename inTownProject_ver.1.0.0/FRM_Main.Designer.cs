@@ -36,7 +36,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Chk_StartWork = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pic_Frame = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -45,9 +45,9 @@
             this.Txt_ProdNum = new System.Windows.Forms.TextBox();
             this.Txt_ProdName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Txt_ProcName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Txt_PlanCnt = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.Btn_Logout = new System.Windows.Forms.Button();
@@ -59,7 +59,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.Cmb_Order = new System.Windows.Forms.ComboBox();
             this.Cmb_Machine = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Cmb_FrameName = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Frame)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Date
@@ -136,19 +137,19 @@
             this.Chk_StartWork.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Chk_StartWork.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // Pic_Frame
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(452, 183);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(297, 213);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.Pic_Frame.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Pic_Frame.Location = new System.Drawing.Point(452, 183);
+            this.Pic_Frame.Name = "Pic_Frame";
+            this.Pic_Frame.Size = new System.Drawing.Size(297, 213);
+            this.Pic_Frame.TabIndex = 3;
+            this.Pic_Frame.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(449, 156);
+            this.label7.Location = new System.Drawing.Point(458, 156);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 1;
@@ -213,12 +214,12 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "공정명";
             // 
-            // textBox5
+            // Txt_ProcName
             // 
-            this.textBox5.Location = new System.Drawing.Point(452, 91);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(119, 25);
-            this.textBox5.TabIndex = 7;
+            this.Txt_ProcName.Location = new System.Drawing.Point(452, 91);
+            this.Txt_ProcName.Name = "Txt_ProcName";
+            this.Txt_ProcName.Size = new System.Drawing.Size(119, 25);
+            this.Txt_ProcName.TabIndex = 7;
             // 
             // label13
             // 
@@ -229,12 +230,12 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "주 / 야";
             // 
-            // textBox7
+            // Txt_PlanCnt
             // 
-            this.textBox7.Location = new System.Drawing.Point(107, 309);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(62, 25);
-            this.textBox7.TabIndex = 9;
+            this.Txt_PlanCnt.Location = new System.Drawing.Point(107, 309);
+            this.Txt_PlanCnt.Name = "Txt_PlanCnt";
+            this.Txt_PlanCnt.Size = new System.Drawing.Size(62, 25);
+            this.Txt_PlanCnt.TabIndex = 9;
             // 
             // textBox8
             // 
@@ -319,6 +320,7 @@
             this.Cmb_Order.Name = "Cmb_Order";
             this.Cmb_Order.Size = new System.Drawing.Size(183, 23);
             this.Cmb_Order.TabIndex = 18;
+            this.Cmb_Order.SelectedIndexChanged += new System.EventHandler(this.Cmb_Order_SelectedIndexChanged);
             // 
             // Cmb_Machine
             // 
@@ -328,11 +330,21 @@
             this.Cmb_Machine.Size = new System.Drawing.Size(150, 23);
             this.Cmb_Machine.TabIndex = 19;
             // 
+            // Cmb_FrameName
+            // 
+            this.Cmb_FrameName.FormattingEnabled = true;
+            this.Cmb_FrameName.Location = new System.Drawing.Point(531, 153);
+            this.Cmb_FrameName.Name = "Cmb_FrameName";
+            this.Cmb_FrameName.Size = new System.Drawing.Size(207, 23);
+            this.Cmb_FrameName.TabIndex = 20;
+            this.Cmb_FrameName.SelectedIndexChanged += new System.EventHandler(this.Cmb_FrameName_SelectedIndexChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 533);
+            this.Controls.Add(this.Cmb_FrameName);
             this.Controls.Add(this.Cmb_Machine);
             this.Controls.Add(this.Cmb_Order);
             this.Controls.Add(this.label16);
@@ -344,16 +356,16 @@
             this.Controls.Add(this.Btn_Logout);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.Txt_PlanCnt);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.Txt_ProdName);
             this.Controls.Add(this.Txt_ProdNum);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.Txt_ProcName);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Pic_Frame);
             this.Controls.Add(this.Chk_StartWork);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -368,7 +380,7 @@
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Frame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,7 +396,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox Chk_StartWork;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Pic_Frame;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -393,9 +405,9 @@
         private System.Windows.Forms.TextBox Txt_ProdNum;
         private System.Windows.Forms.TextBox Txt_ProdName;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Txt_ProcName;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Txt_PlanCnt;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button Btn_Logout;
@@ -407,6 +419,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox Cmb_Order;
         private System.Windows.Forms.ComboBox Cmb_Machine;
+        private System.Windows.Forms.ComboBox Cmb_FrameName;
     }
 }
 

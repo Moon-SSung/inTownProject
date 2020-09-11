@@ -8,3 +8,13 @@ c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inT
 c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.pdb
 c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.LoginForm.resources
 c:\users\admin\documents\visual studio 2015\Projects\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.MainForm.resources
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.exe.config
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.exe
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.pdb
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.exe
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\bin\Debug\inTownProject_ver.1.0.0.pdb
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.MainForm.resources
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.LoginForm.resources
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver._1._0._0.Properties.Resources.resources
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\obj\Debug\inTownProject_ver.1.0.0.csprojResolveAssemblyReference.cache
