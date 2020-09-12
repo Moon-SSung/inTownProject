@@ -234,7 +234,42 @@ namespace inTownProject_ver._1._0._0
 
         private void Cmb_FrameName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Pic_Frame.Image = Image.FromFile("P1.jpg");
+            MessageBox.Show(Cmb_FrameName.Text);
+            Pic_Frame.Load(@"C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\Common\images\" + Cmb_FrameName.Text + ".jpg");
+            Pic_Frame.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            //try
+            //{
+            //    using (SqlConnection conn = new SqlConnection(DB_Connect.CONNSTRING))
+            //    {
+            //        conn.Open();
+            //        SqlCommand cmd = new SqlCommand();
+            //        cmd.Connection = conn;
+
+            //        cmd.CommandText = " SELECT 금형코드, 금형명 " +
+            //                          "  FROM TB_frame "+
+            //                          "    WHERE 금형코드 = @FrameCode ";
+
+            //        //금형번호
+            //        SqlParameter orderCode = new SqlParameter("@FrameCode", SqlDbType.Int);
+            //        KeyValuePair<string, string> keyvalPair = (KeyValuePair<string, string>)Cmb_FrameName.SelectedItem;
+            //        orderCode.Value = keyvalPair.Value;
+            //        cmd.Parameters.Add(orderCode);
+
+            //        //데이터를 받아 TextBox들에 대입
+            //        SqlDataReader reader = cmd.ExecuteReader();
+            //        while (reader.Read())
+            //        {
+            //            Pic_Frame.Load(@"C:\Users\admin\Desktop\프로젝트\inTownProject_ver.1.0.0\inTownProject_ver.1.0.0\Common\images\"+ Cmb_FrameName.Text +".jpg");
+            //        }
+
+            //        View_Cmb_Machine(keyvalPair.Value);
+            //    }
+            //}
+            //catch
+            //{
+
+            //}
         }
     }
 }

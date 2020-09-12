@@ -332,10 +332,11 @@
             // 
             // Cmb_FrameName
             // 
+            this.Cmb_FrameName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.Cmb_FrameName.FormattingEnabled = true;
             this.Cmb_FrameName.Location = new System.Drawing.Point(531, 153);
             this.Cmb_FrameName.Name = "Cmb_FrameName";
-            this.Cmb_FrameName.Size = new System.Drawing.Size(207, 23);
+            this.Cmb_FrameName.Size = new System.Drawing.Size(207, 26);
             this.Cmb_FrameName.TabIndex = 20;
             this.Cmb_FrameName.SelectedIndexChanged += new System.EventHandler(this.Cmb_FrameName_SelectedIndexChanged);
             // 
